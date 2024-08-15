@@ -11,10 +11,10 @@ public abstract class Conta implements IConta {
 
 
 
-    public Conta(String nomeCliente) {
+    public Conta(String nomeCliente, int cpfCliente) {
         this.agencia = AGENCIA_PADRAO;
         this.numero = SEQUENCIAL++;
-        this.cliente = new Cliente(nomeCliente);
+        this.cliente = new Cliente(nomeCliente, cpfCliente);
     }
 
 
